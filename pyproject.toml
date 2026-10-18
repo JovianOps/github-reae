@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "github-reae"
+version = "1.0.0"
+description = "Reverse-engineer any GitHub repo: infer architecture, data models, and key flows."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = []  # stdlib only
+
+[project.scripts]
+github-reae = "github_reae:main"
+
+[tool.setuptools]
+py-modules = ["github_reae"]
